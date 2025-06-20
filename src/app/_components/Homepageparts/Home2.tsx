@@ -14,7 +14,7 @@ const Home2 = () => {
           Why Choose Us?{" "}
           <span className="text-indigo-600">Discover The Advantages</span> With Recruit GPT
         </h1>
-        <p className="mt-4 text-base text-gray-800 max-w-2xl mx-auto">
+        <p className="mt-4 text-base text-gray-800 max-w-3xl mx-auto">
           At Recruit GPT, we pride ourselves on providing exceptional professionals
           that drive your business forward. Here’s why our clients trust us to meet their needs:
         </p>
