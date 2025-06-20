@@ -10,7 +10,7 @@ const Home2 = () => {
         <button className="rounded-full bg-white px-6 py-2 text-indigo-600 border border-indigo-600 mb-6 hover:bg-blue-800 transition">
           Get Started
         </button>
-        <h1 className="text-4xl text-black font-semibold max-w-[50%] mx-auto">
+        <h1 className="text-4xl text-black font-semibold max-w-[45%] mx-auto">
           Why Choose Us?{" "}
           <span className="text-indigo-600">Discover The Advantages</span> With Recruit GPT
         </h1>
@@ -21,7 +21,7 @@ const Home2 = () => {
       </section>
 
     
-     <div className="flex flex-col md:flex-row justify-center items-stretch gap-6">
+     <div className="flex  flex-col md:flex-row justify-center items-stretch gap-6 mt-6">
         <Cards
           title="AI-Powered Resume Creation"
           description="We leverage advanced AI technology to craft professional, tailored resumes that highlight your skills and experience effectively."

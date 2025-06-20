@@ -4,13 +4,14 @@ const Home1 = () => {
   return (
     <>
       <div
-        className="relative mx-auto h-screen w-[80%] rounded-2xl text-white"
+        className="absolute top-10.5 left-1/10   mx-auto h-screen w-[80%] rounded-2xl text-white"
         style={{
           background:
             "linear-gradient(180deg, rgba(255, 255, 255, 0.15) 11.16%, rgba(83, 86, 255, 0.5) 41.38%, #5356FF 79.5%)",
         }}
       >
         <section className="mt-20 px-4 text-center md:px-0">
+          <div className=" mt-">
           <h1 className="text-4xl font-bold text-gray-800 md:text-5xl">
             Discover the <span className="text-indigo-600">Best Talent</span>
             <br />
@@ -30,6 +31,7 @@ const Home1 = () => {
               Get Started
             </button>
           </div>
+          </div>
 
           <Image
             src="/dashboard.png"
@@ -42,7 +44,7 @@ const Home1 = () => {
       </div>
 
       {/* Move this outside to actually push next section down */}
-      <div className="h-[500px]" />
+      <div className="h-[1100px]" />
     </>
   );
 };
