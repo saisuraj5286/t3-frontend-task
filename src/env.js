@@ -1,3 +1,7 @@
+import dotenv from "dotenv";
+dotenv.config(); // 👈 Make sure this is before you call createEnv
+
+
 import { createEnv } from "@t3-oss/env-nextjs";
 import { z } from "zod";
 
