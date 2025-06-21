@@ -9,6 +9,14 @@ import {
 } from "recharts";
 import { ChevronDown } from "lucide-react";
 
+type TooltipProps = {
+  active?: boolean;
+  payload?: {
+    value: number;
+    name: string;
+  }[];
+};
+
 const data = [
   { name: "1 - 10 Aug", value: 10 },
   { name: "11 - 20 Aug", value: 30 },
@@ -16,8 +24,8 @@ const data = [
   { name: "1 - 10 Nov", value: 100 },
 ];
 
-const CustomTooltip = ({ active, payload }: any) => {
-  if (active && payload && payload.length) {
+const CustomTooltip = ({ active, payload }: TooltipProps) => {
+  if (active && payload?.length) {
     return (
       <div className="rounded bg-black px-2 py-1 text-xs text-white shadow-md">
         View

@@ -57,7 +57,7 @@ export default function StudentStatsChart() {
     setIsDropdownOpen(false);
   };
 
-  const data = dataByMonth[selectedMonth] || [];
+  const data = dataByMonth[selectedMonth] ?? [];
 
   return (
     <div className="relative w-full max-w-[100%] rounded-xl bg-white p-6 shadow-md">

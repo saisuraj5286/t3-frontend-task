@@ -1,14 +1,12 @@
 import React from "react";
 import Stats from "./stats";
 import Description from "./description";
-import statsimg from "../../../../public/talentacquisitionimgs/statsimg.png";
 import Image from "next/image";
 import StudentStatsChart from "./statscards/StudentStatsChart";
 import TodayTaskList from "./statscards/TodayTaskList";
 import BackgroundProcessCard from "./statscards/BackgroundProcessCard";
 import ReviewScore from "./statscards/ReviewScore";
 import OverallStudents from "./statscards/OverallStudents";
-
 
 const TalentAcquisitionCard = () => {
   return (
@@ -24,19 +22,18 @@ const TalentAcquisitionCard = () => {
           high quality candidates.
         </p>
       </div>
-       
+
       <div className="m-3 mx-auto flex w-[85%] flex-col items-center justify-between gap-8 rounded-2xl border border-gray-300 px-6 py-10 shadow-md">
         {/*  1st  */}
         <div className="flex flex-row">
-          <div className="absolute mt-15 max-w-[50%] max-h-5  left-65">
-            <TodayTaskList/>
+          <div className="absolute left-65 mt-15 max-h-5 max-w-[50%]">
+            <TodayTaskList />
           </div>
           <Stats src="/statbg.png" alt="Statistics chart" />
           <Description
             title="Understanding Requirements"
             content="Conducting in-depth discussions to define job roles, expectations, and key skills. Aligning hiring objectives with business needs."
           />
-          
         </div>
         {/* 2nd */}
         <div className="flex flex-row">
@@ -48,8 +45,8 @@ const TalentAcquisitionCard = () => {
         </div>
         {/* 3rd */}
         <div className="flex flex-row">
-          <div className="absolute mt-18 max-w-[100%]  left-65">
-            <StudentStatsChart/>
+          <div className="absolute left-65 mt-18 max-w-[100%]">
+            <StudentStatsChart />
           </div>
           <Stats src="/statbg.png" alt="Statistics chart" />
           <Description
@@ -64,14 +61,14 @@ const TalentAcquisitionCard = () => {
             content="Scheduling interviews and facilitating seamless communication. Gathering and sharing constructive feedback from both parties."
           />
           <Stats src="/statbg.png" alt="Statistics chart" />
-          <div className="absolute mt-18    right-105  ">
-            <ReviewScore/>
+          <div className="absolute right-105 mt-18">
+            <ReviewScore />
           </div>
         </div>
         {/* 5th */}
         <div className="flex flex-row">
-          <div className="absolute mt-13 max-w-[100%]  left-60">
-            <OverallStudents/>
+          <div className="absolute left-60 mt-13 max-w-[100%]">
+            <OverallStudents />
           </div>
           <Stats src="/statbg.png" alt="Statistics chart" />
           <Description
@@ -86,15 +83,19 @@ const TalentAcquisitionCard = () => {
             content="Assisting in salary discussions and contract finalization. Supporting a smooth transition for the selected candidate."
           />
           <Stats src="/statbg.png" alt="Statistics chart" />
-          <div className="absolute  max-w-[38%] max-h-[10%] rounded-2xl  right-15  top-15">
-           <img src="/talentacquisitionimgs/statsimg.png" alt="statsimg" className=" rounded-2xl  " />
-          
+          <div className="absolute top-15 right-15 max-h-[10%] max-w-[38%] rounded-2xl">
+            <Image
+  src="/talentacquisitionimgs/statsimg.png"
+  alt="statsimg"
+  width={500}
+  height={300}
+/>
           </div>
         </div>
         {/* 7th */}
         <div className="flex flex-row">
-          <div className="absolute mt-18   left-65">
-            <BackgroundProcessCard/>
+          <div className="absolute left-65 mt-18">
+            <BackgroundProcessCard />
           </div>
           <Stats src="/statbg.png" alt="Statistics chart" />
           <Description
