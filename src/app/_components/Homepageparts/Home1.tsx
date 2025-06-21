@@ -34,7 +34,7 @@ const Home1 = () => {
           </div>
 
           <Image
-            src="/dashboard.png"
+            src="/Dashboard.png"
             alt="dashboard"
             width={900}
             height={900}
