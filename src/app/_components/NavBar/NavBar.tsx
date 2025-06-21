@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const NavBar = () => {
   return (
-    <nav className='flex max-w-[70%] items-center justify-between px-8 py-4 shadow-md bg-white place-content-between rounded-2xl  m-2 p-2 mx-auto'>
+    <nav className='flex max-w-[70%] mt-10 items-center border border-gray-100 justify-between px-8 py-4 shadow-md bg-white place-content-between rounded-2xl  m-2 p-2 mx-auto'>
       <div className='flex min-w-[30%] items-center  '>
         <img src="/recuritlogo.png" alt="" />
         <h1 className='text-2xl'>Recuit GPT</h1>

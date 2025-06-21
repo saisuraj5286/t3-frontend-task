@@ -1,6 +1,6 @@
 import React from 'react'
 import Cards from '../Cards'
-import { FaUserTie, FaLaptopCode, FaHandshake } from "react-icons/fa";
+import { AiOutlineFileText, AiOutlineAudio, AiOutlineCheckCircle} from "react-icons/ai";
 
 
 const Home2 = () => {
@@ -25,17 +25,17 @@ const Home2 = () => {
         <Cards
           title="AI-Powered Resume Creation"
           description="We leverage advanced AI technology to craft professional, tailored resumes that highlight your skills and experience effectively."
-          icon={<FaUserTie />}
+          icon={<AiOutlineFileText />}
         />
         <Cards
           title="AI-Powered Interviews"
           description="Our AI-driven interview platform customizes questions based on the candidate’s skills, job description, and recruiter requirements. "
-          icon={<FaLaptopCode />}
+          icon={<AiOutlineAudio />}
         />
         <Cards
           title="AI-Powered Interview Feedback"
           description="We leverage advanced AI technology to craft professional, tailored resumes that highlight your skills and experience effectively. "
-          icon={<FaHandshake />}
+          icon={<AiOutlineCheckCircle />}
         />
       </div>
     </>

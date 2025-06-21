@@ -45,7 +45,7 @@ const dataByMonth: Record<string, { name: string; students: number }[]> = {
     { name: "T", students: 70 },
     { name: "R", students: 110 },
   ],
-  // Add more month-specific data if needed...
+  // Add more month-specific data 
 };
 
 export default function StudentStatsChart() {
@@ -60,7 +60,7 @@ export default function StudentStatsChart() {
   const data = dataByMonth[selectedMonth] || [];
 
   return (
-    <div className="relative w-full min-w-[100%] rounded-xl bg-white p-6 shadow-md">
+    <div className="relative w-full max-w-[100%] rounded-xl bg-white p-6 shadow-md">
       <div className="mb-4 flex items-center justify-between">
         <div>
           <h2 className="text-sm text-gray-500">Statistics</h2>
@@ -95,7 +95,7 @@ export default function StudentStatsChart() {
         </div>
       </div>
 
-      <ResponsiveContainer width="100%" height={150}>
+      <ResponsiveContainer width={350} height={230}>
         <BarChart data={data}>
           <CartesianGrid vertical={false} strokeDasharray="3 3" />
           <YAxis />

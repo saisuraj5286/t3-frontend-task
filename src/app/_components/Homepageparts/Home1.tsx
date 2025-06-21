@@ -4,7 +4,7 @@ const Home1 = () => {
   return (
     <>
       <div
-        className="absolute top-10.5 left-1/10   mx-auto h-screen w-[80%] rounded-2xl text-white"
+        className="absolute top-10.5 left-1/10 mt-10  mx-auto h-screen w-[80%] rounded-2xl text-white"
         style={{
           background:
             "linear-gradient(180deg, rgba(255, 255, 255, 0.15) 11.16%, rgba(83, 86, 255, 0.5) 41.38%, #5356FF 79.5%)",
@@ -38,7 +38,7 @@ const Home1 = () => {
             alt="dashboard"
             width={900}
             height={900}
-            className="absolute top-80 left-1/2 transform -translate-x-1/2 w-[90%] rounded-2xl shadow-2xl"
+            className="absolute top-80 left-1/2 transform -translate-x-1/2 w-[90%] rounded-2xl shadow-xl"
           />
         </section>
       </div>

@@ -3,7 +3,11 @@ import Stats from "./stats";
 import Description from "./description";
 import statsimg from "../../../../public/talentacquisitionimgs/statsimg.png";
 import Image from "next/image";
-import StudentStatsChart from "./StudentStatsChart";
+import StudentStatsChart from "./statscards/StudentStatsChart";
+import TodayTaskList from "./statscards/TodayTaskList";
+import BackgroundProcessCard from "./statscards/BackgroundProcessCard";
+import ReviewScore from "./statscards/ReviewScore";
+import OverallStudents from "./statscards/OverallStudents";
 
 
 const TalentAcquisitionCard = () => {
@@ -11,7 +15,7 @@ const TalentAcquisitionCard = () => {
     <div>
       <div className="mt-20 mb-9 px-6 text-center">
         <h1 className="mx-auto max-w-[50%] text-4xl font-semibold text-black">
-          Our <span className="text-indigo-400">Talent Acquisition</span>{" "}
+          Our <span className="text-indigo-500">Talent Acquisition</span>{" "}
           Process
         </h1>
         <p className="mx-auto mt-4 max-w-3xl text-base text-gray-800">
@@ -24,8 +28,8 @@ const TalentAcquisitionCard = () => {
       <div className="m-3 mx-auto flex w-[85%] flex-col items-center justify-between gap-8 rounded-2xl border border-gray-300 px-6 py-10 shadow-md">
         {/*  1st  */}
         <div className="flex flex-row">
-          <div className="absolute max-w-[25%] bottom-  left-80">
-            <StudentStatsChart/>
+          <div className="absolute mt-15 max-w-[50%] max-h-5  left-65">
+            <TodayTaskList/>
           </div>
           <Stats src="/statbg.png" alt="Statistics chart" />
           <Description
@@ -44,6 +48,9 @@ const TalentAcquisitionCard = () => {
         </div>
         {/* 3rd */}
         <div className="flex flex-row">
+          <div className="absolute mt-18 max-w-[100%]  left-65">
+            <StudentStatsChart/>
+          </div>
           <Stats src="/statbg.png" alt="Statistics chart" />
           <Description
             title="Talent Sourcing & Outreach"
@@ -57,9 +64,15 @@ const TalentAcquisitionCard = () => {
             content="Scheduling interviews and facilitating seamless communication. Gathering and sharing constructive feedback from both parties."
           />
           <Stats src="/statbg.png" alt="Statistics chart" />
+          <div className="absolute mt-18    right-105  ">
+            <ReviewScore/>
+          </div>
         </div>
         {/* 5th */}
         <div className="flex flex-row">
+          <div className="absolute mt-13 max-w-[100%]  left-60">
+            <OverallStudents/>
+          </div>
           <Stats src="/statbg.png" alt="Statistics chart" />
           <Description
             title="Shortlisting & Profile Presentation"
@@ -80,6 +93,9 @@ const TalentAcquisitionCard = () => {
         </div>
         {/* 7th */}
         <div className="flex flex-row">
+          <div className="absolute mt-18   left-65">
+            <BackgroundProcessCard/>
+          </div>
           <Stats src="/statbg.png" alt="Statistics chart" />
           <Description
             title="Background Verification & Reference Checks"
