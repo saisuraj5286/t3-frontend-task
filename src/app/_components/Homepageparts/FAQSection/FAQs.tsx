@@ -45,7 +45,7 @@ const FAQs: React.FC = () => {
   return (
     <div className="w-full md:w-[85%] mx-auto my-10 px-10 py-17 border border-gray-200 rounded-2xl">
         <div className="text-center mt-2">
-            <button className="rounded-full bg-white px-8 py-1 text-indigo-600 border border-indigo-600 mb-6 hover:bg-blue-800 transition">
+            <button className="rounded-full bg-white px-8 py-1 text-indigo-600 border border-indigo-600 mb-6 hover:bg-indigo-50 transition">
           FAQs
         </button>
         <h1 className="text-3xl font-bold  text-center text-indigo-500">Frequently Asked Questions</h1>
