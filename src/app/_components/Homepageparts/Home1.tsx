@@ -1,10 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import NavBar from "../NavBar/NavBar";
 const Home1 = () => {
   return (
     <>
+    <div className="relative">
+      <NavBar/>
       <div
-        className="absolute top-10.5 left-1/10 mt-10  mx-auto h-screen w-[80%] rounded-2xl text-white"
+        className="absolute top-0 sm:left-10 sm:right-10 md:left-15 md:right-15 lg:right18 lg:left-18 mt-10   mx-auto h-screen w-[90%] rounded-2xl text-white md:"
         style={{
           background:
             "linear-gradient(180deg, rgba(255, 255, 255, 0.15) 11.16%, rgba(83, 86, 255, 0.5) 41.38%, #5356FF 79.5%)",
@@ -17,7 +20,7 @@ const Home1 = () => {
             <br />
             for your Companies
           </h1>
-          <p className="mt-4 text-sm text-gray-600 md:text-base">
+          <p className="mt-4 text-sm sm:text-xs text-gray-600 md:text-base">
             We Connect You With High-Quality Professionals Across Various
             Industry Fields.
           </p>
@@ -44,7 +47,8 @@ const Home1 = () => {
       </div>
 
       {/* Move this outside to actually push next section down */}
-      <div className="h-[1100px]" />
+      <div className="xl:h-290 lg:h-250 md:h-210 sm:h-180 h-150" />
+      </div>
     </>
   );
 };

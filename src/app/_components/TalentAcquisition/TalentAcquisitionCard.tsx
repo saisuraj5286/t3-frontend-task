@@ -1,12 +1,8 @@
 import React from "react";
 import Stats from "./stats";
 import Description from "./description";
-import Image from "next/image";
-import StudentStatsChart from "./statscards/StudentStatsChart";
-import TodayTaskList from "./statscards/TodayTaskList";
-import BackgroundProcessCard from "./statscards/BackgroundProcessCard";
-import ReviewScore from "./statscards/ReviewScore";
-import OverallStudents from "./statscards/OverallStudents";
+
+
 
 const TalentAcquisitionCard = () => {
   return (
@@ -23,81 +19,72 @@ const TalentAcquisitionCard = () => {
         </p>
       </div>
 
-      <div className="m-3 mx-auto flex w-[85%] flex-col items-center justify-between gap-8 rounded-2xl border border-gray-300 px-6 py-10 shadow-md">
+      <div className="m-3 mx-auto flex w-[85%] flex-col  items-center justify-between gap-8 rounded-2xl border border-gray-300 px-6 py-10 shadow-md">
         {/*  1st  */}
-        <div className="flex flex-row">
-          <div className="absolute left-65 mt-15 max-h-5 max-w-[50%]">
-            <TodayTaskList />
-          </div>
-          <Stats src="/statbg.png" alt="Statistics chart" />
+        <div className="flex md:flex-row flex-col gap-5">
+          <Stats
+            src="/talentacquisitionimgs/Todaylist.png"
+            alt="Statistics chart"
+          />
           <Description
             title="Understanding Requirements"
             content="Conducting in-depth discussions to define job roles, expectations, and key skills. Aligning hiring objectives with business needs."
           />
         </div>
         {/* 2nd */}
-        <div className="flex flex-row">
+        <div className="flex md:flex-row flex-col-reverse gap-5">
           <Description
             title="Screening & Competency Assessment"
             content="Analyzing industry trends and competitor hiring strategies. Identifying top talent pools and emerging skill demands."
           />
-          <Stats src="/statbg.png" alt="Statistics chart" />
+          <Stats
+            src="/talentacquisitionimgs/statbg.png"
+            alt="Statistics chart"
+          />
         </div>
         {/* 3rd */}
-        <div className="flex flex-row">
-          <div className="absolute left-65 mt-18 max-w-[100%]">
-            <StudentStatsChart />
-          </div>
-          <Stats src="/statbg.png" alt="Statistics chart" />
+        <div className="flex md:flex-row flex-col gap-5">
+          
+          <Stats
+            src="/talentacquisitionimgs/Statistics.png"
+            alt="Statistics chart"
+          />
           <Description
             title="Talent Sourcing & Outreach"
             content="Utilizing AI-powered sourcing techniques to find the best candidates. Leveraging multiple channels, including job boards, social media, and professional networks."
           />
         </div>
         {/* 4th */}
-        <div className="flex flex-row">
+        <div className="flex md:flex-row flex-col-reverse gap-5">
           <Description
             title="Interview Coordination & Feedback"
             content="Scheduling interviews and facilitating seamless communication. Gathering and sharing constructive feedback from both parties."
           />
-          <Stats src="/statbg.png" alt="Statistics chart" />
-          <div className="absolute right-105 mt-18">
-            <ReviewScore />
-          </div>
+          <Stats src="/talentacquisitionimgs/AiFeedback.png" alt="Statistics chart" />
+          
         </div>
         {/* 5th */}
-        <div className="flex flex-row">
-          <div className="absolute left-60 mt-13 max-w-[100%]">
-            <OverallStudents />
-          </div>
-          <Stats src="/statbg.png" alt="Statistics chart" />
+        <div className="flex md:flex-row flex-col gap-5">
+         
+          <Stats src="/talentacquisitionimgs/OverallStudents.png" alt="Statistics chart" />
           <Description
             title="Shortlisting & Profile Presentation"
             content="Curating a refined list of high-potential candidates. Providing detailed candidate insights and suitability analysis."
           />
         </div>
         {/* 6th */}
-        <div className="relative flex flex-row">
+        <div className="flex md:flex-row flex-col-reverse gap-5">
           <Description
             title="Offer Negotiation & Onboarding Support"
             content="Assisting in salary discussions and contract finalization. Supporting a smooth transition for the selected candidate."
           />
-          <Stats src="/statbg.png" alt="Statistics chart" />
-          <div className="absolute top-15 right-15 max-h-[10%] max-w-[38%] rounded-2xl">
-            <Image
-  src="/talentacquisitionimgs/statsimg.png"
-  alt="statsimg"
-  width={500}
-  height={300}
-/>
-          </div>
+          <Stats src="/talentacquisitionimgs/Candidates.png" alt="Statistics chart" />
+          
         </div>
         {/* 7th */}
-        <div className="flex flex-row">
-          <div className="absolute left-65 mt-18">
-            <BackgroundProcessCard />
-          </div>
-          <Stats src="/statbg.png" alt="Statistics chart" />
+        <div className="flex md:flex-row flex-col gap-5">
+         
+          <Stats src="/talentacquisitionimgs/BackgroundPro.png" alt="Statistics chart" />
           <Description
             title="Background Verification & Reference Checks"
             content="Validating candidate credentials, experience, and professional reputation. Ensuring authenticity through comprehensive reference checks."

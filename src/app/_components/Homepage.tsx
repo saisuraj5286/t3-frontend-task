@@ -11,7 +11,7 @@ const Homepage = () => {
   return (
     <div>
 
-        <NavBar/>
+        {/* <NavBar/> */}
         <Home1/> 
         <Home2/>
         <TalentAcquisitioncard/>
