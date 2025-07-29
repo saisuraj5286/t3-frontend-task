@@ -9,8 +9,8 @@ const LastHeroSection = () => {
           "linear-gradient(180deg, rgba(255, 255, 255, 0.15) 21.16%, rgba(83, 86, 255, 0.5) 60.38%, #5356FF 90.5%)",
       }}
     >
-      <div className="flex flex-col max-w-[65%] p-3 justify-center items-center gap-5 mx-auto">
-        <h1 className="text-5xl  text-center font-semibold text-black">
+      <div className="flex flex-col max-w-[65%]   justify-center items-center gap-5 mx-auto">
+        <h1 className="lg:text-5xl sm:text-3xl  text-center font-semibold text-black">
           Unlock Your Business
           <span className="text-indigo-500"> Potential With Top Talent </span>
           Today!

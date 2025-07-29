@@ -9,11 +9,11 @@ const NavBar = () => {
 
   return (
     <nav className='bg-white shadow-md border border-gray-100 rounded-2xl p-4 mx-auto mt-10 max-w-[95%] sm:max-w-[80%] md:max-w-[80%] lg:max-w-[80%]'>
-      {/* Top row */}
+      
       <div className='flex justify-between items-center'>
         {/* Logo */}
         <div className='flex items-center space-x-2'>
-          <img src="/recuritlogo.png" alt="Logo" className="w-10 h-10 object-contain" />
+          <img src="/logo.svg" alt="Logo" className="w-10 h-10 object-contain" />
           <h1 className='text-xl font-semibold'>Recruit GPT</h1>
         </div>
 
@@ -26,7 +26,7 @@ const NavBar = () => {
           <Link href="/about" className="hover:text-blue-600 font-medium">About</Link>
         </div>
 
-        {/* Get Started Button */}
+        
         <div className='hidden lg:block'>
           <Link href="/getstarted">
             <button className="bg-black text-white px-4 py-2 rounded-3xl hover:bg-gray-700">
@@ -35,7 +35,7 @@ const NavBar = () => {
           </Link>
         </div>
 
-        {/* Mobile Hamburger */}
+        
         <div className='lg:hidden'>
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -43,7 +43,7 @@ const NavBar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu Dropdown */}
+      
       {isOpen && (
         <div className='flex flex-col space-y-3 mt-4 lg:hidden bg-white'>
           <Link href="/" className="hover:text-blue-600 font-medium">Home</Link>

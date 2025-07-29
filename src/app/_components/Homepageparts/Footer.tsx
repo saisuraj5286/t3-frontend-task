@@ -10,7 +10,7 @@ const Footer = () => {
         {/* Right Box - 70% */}
         <div className="flex w-full flex-col gap-6 md:w-[70%]">
           <div className="flex gap-3">
-            <img className="rounded-[50%]" src="footerlogo1.png" width={30} height={30} alt="" />
+            <img className="rounded-[50%]" src="/logo.svg" width={30} height={30} alt="" />
             <h2 className="text-2xl font-bold">Recurit GPT</h2>
           </div>
 

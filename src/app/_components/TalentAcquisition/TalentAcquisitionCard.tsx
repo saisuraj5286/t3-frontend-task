@@ -38,7 +38,7 @@ const TalentAcquisitionCard = () => {
             content="Analyzing industry trends and competitor hiring strategies. Identifying top talent pools and emerging skill demands."
           />
           <Stats
-            src="/talentacquisitionimgs/statbg.png"
+            src="/talentacquisitionimgs/AssessmentReport.svg"
             alt="Statistics chart"
           />
         </div>

@@ -31,17 +31,17 @@ const Home2 = () => {
         <Cards
           title="AI-Powered Resume Creation"
           description="We leverage advanced AI technology to craft professional, tailored resumes that highlight your skills and experience effectively."
-          icon={<AiOutlineFileText />}
+          imageSrc="cardsicons/ai-poweredresume.svg"
         />
         <Cards
           title="AI-Powered Interviews"
           description="Our AI-driven interview platform customizes questions based on the candidate’s skills, job description, and recruiter requirements."
-          icon={<AiOutlineAudio />}
+          imageSrc="cardsicons/ai-poweredinterviews.svg"
         />
         <Cards
           title="AI-Powered Interview Feedback"
           description="We leverage advanced AI technology to provide structured feedback to help candidates improve and succeed."
-          icon={<AiOutlineCheckCircle />}
+          imageSrc="cardsicons/ai-poweredfeedback.svg"
         />
       </div>
     </>
